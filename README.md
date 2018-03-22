@@ -1,5 +1,5 @@
 # Materias Computación
 
-![Logo de la Universidad De Oriente](materias-computacion/misceláneo/logo udo.jpg)
+[Logo de la Universidad De Oriente](misceláneo/logo udo.jpg)
 
 Repositorio creado para almacenar información y documentos pertinentes al departamento de Computación y Sistemas de la Universidad de Oriente, Núcleo Anzoátegui de la República Bolivariana de Venezuela.
