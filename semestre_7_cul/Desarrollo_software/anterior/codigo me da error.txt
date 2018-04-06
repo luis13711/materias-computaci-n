@@ -1,0 +1,32 @@
+CREATE TABLE IF NOT EXISTS `Libreria`.`Pedido Cliente` 
+(
+  `IdLibro` INT NOT NULL,
+  `IdPedido` INT NOT NULL
+,
+  `Cantidad` INT NULL
+,
+  `Precio` FLOAT NULL
+,
+  PRIMARY KEY (`IdLibro`, `IdPedido`)
+,
+  INDEX `IdPedido_idx` (`IdPedido` ASC)
+,
+  CONSTRAINT `IdLibro1`
+    
+FOREIGN KEY (`IdLibro`)
+    
+REFERENCES `Libreria`.`Libro` (`idLibro`)
+    
+ON DELETE CASCADE
+    ON UPDATE CASCADE
+,
+CONSTRAINT `IdPedido1`
+    FOREIGN KEY (`IdPedido`)
+    
+REFERENCES `Libreria`.`Pedido` (`IdPedido`)
+    
+ON DELETE CASCADE
+   
+ ON UPDATE CASCADE)
+
+ENGINE = InnoDB;

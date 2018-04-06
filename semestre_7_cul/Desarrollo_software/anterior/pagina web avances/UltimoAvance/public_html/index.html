@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Prueba</title>
+        <meta charset="UTF-8">
+        <script src="js/libs/jquery/jquery.js"></script>
+        
+        <style>
+            body{
+                margin: 0;
+                font-family: sans-serif;
+                
+                
+            }
+            #division1{
+                height:30px;
+            }
+            #division2{
+                height:37px;
+            }
+            #arriba{
+                background-color: #375285;
+                
+            }
+            #cabecera a{
+                color: #fff;
+                text-decoration: none;
+            }
+            #cabecera{
+                width: 800px;
+                height: 250px;
+                margin: auto;
+                color: #fff;
+            }
+            
+                
+            #cabecera img{
+                padding: 40px 0px;
+            }
+            nav{
+                clear: left;
+                width: 800px;
+                height: 45px;
+                padding: 0px;
+                
+            }
+            nav li{
+                list-style-type: none;
+                float: left;
+                padding: 0px;
+                
+            }
+            nav a{
+                padding: 13px;
+                background-color: #375285;
+                transition: 400ms;
+                width: auto;
+                display: block;
+                
+            }
+            nav a:hover{
+                background-color: #4364a2;
+                
+            }
+            
+            nav li li{
+                float: none;
+                display: block;
+            }
+            nav ul{
+                clear: left;
+                    
+                position: relative;
+                padding: 0px;
+                display: block;
+                
+            }
+            nav ul ul{
+                display: none;
+                width: auto;
+                position: absolute;
+            }
+            #cabecera h1{
+                float: left;
+                padding: 84px;
+                margin: 0px;
+                
+            }
+            #cabecera img{
+                float: left;
+            }
+            #miscelaneo{
+                position: absolute;
+                width: 800px;
+                height: 250px;
+            }
+            #sesion{
+                padding: 8px;
+                margin: 8px;
+                background-color: #388536;
+                float: right;
+                border-radius: 5px;
+                transition: 400ms;
+                
+            }
+            #sesion:hover{
+                background-color: #40973e;
+            }
+            #registrar{
+                float: right;
+                padding: 8px;
+                margin: 8px;
+            }
+            #contenido{
+                width: 800px;
+                margin: auto;
+                font-size: 12px;
+                    
+                
+            }
+            #noticias{
+                width: 470px;
+                margin:  10px;
+                background-color: #e6e6e6;
+                float: left;
+            }
+            #destacados{
+                width: 270px;
+                margin: 10px;
+                float: left;
+                background-color: #e6e6e6;
+               
+            }
+            #noticias h1{
+                background-color: #4B3B8A;
+                color: #fff;
+                padding: 10px;
+                margin: 0px;
+            }
+            #destacados h1{
+                background-color: #2C7C74;
+                color: #fff;
+                padding: 10px;
+                margin: 0px;
+            }
+            
+            .articulo{
+                padding: 5px;
+            }
+        </style>
+        <script>
+           
+        window.onload = function(){
+            $("#drop").hover(
+                function(){
+                    $("#droped").filter(':not(:animated)').fadeIn(400);
+                },
+                function(){
+                    $("#droped").fadeOut(400);
+                });
+            
+        };
+        
+        </script>           
+    </head>
+    <body>
+        
+        <div id="arriba">
+            <div id="cabecera">
+                <img  src="logo2.png" alt="logo">
+                <h1>LIBRERIA</h1>
+                <div id="miscelaneo" >
+                        <a href="#"  id="sesion">Iniciar Sesion</a>
+                        <a href="#" id="registrar">Registar</a>
+                </div>
+                    
+                    
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li id="drop">
+                            <a  href="#">Productos</a>
+                            <ul id="droped">
+                                <li>
+                                    <a href="#">Libros</a>
+                                </li>
+                                <li>
+                                    <a href="#">Revistas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Soporte tecnico</a>
+                        </li>
+                    </ul>
+                </nav>
+           
+                   
+            </div>
+        </div>
+        <div id="contenido">
+            <div id="noticias" >
+                <h1>Noticias</h1>
+                <div class="articulo" >
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                        Aenean commodo ligula eget dolor. 
+                        Aenean massa. Cum sociis natoque 
+                        penatibus et
+                    </p>
+                </div>
+                <div class="articulo" >
+                    <h2>Cicero</h2>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus
+                        error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa 
+                        quae ab
+                    </p>
+                </div>
+                <div class="articulo" >
+                    <h2>Don Quijote</h2>
+                    <p>
+                        Y, viéndole don Quijote de aquella manera,
+                        con muestras de tanta tristeza, le dijo: 
+                        Sábete, Sancho, que no es un
+                    </p>
+                </div>
+            </div>
+            <div id="destacados">
+                <h1>Destacados</h1>
+                <div class="libro" >
+                    <h2>Harry Potter</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

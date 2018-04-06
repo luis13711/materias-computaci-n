@@ -1,0 +1,91 @@
+
+<html>
+    <head>
+        <title>Prueba</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                margin: 0;
+            }
+            #cabecera{
+                background-color: #2765a5;
+                height: 250px;
+                margin-top: 0;
+                padding: 0;
+
+            }
+            #cabecera2{
+                margin: auto;
+                width: 1024px;
+                height: 250px;
+            }
+            nav{
+                width: available;
+                height: 42px;
+            }
+            nav ul{
+               list-style: none;
+               padding: 0px;
+               margin: 0px;
+            }
+            nav li{
+                float: left;
+            }
+            nav li:hover li{
+                display: block;
+            }
+            nav a{
+                
+                padding: 12px;
+                display: block;
+                transition:0.5s;
+                background-color: #2765a5;
+                text-decoration: none;
+                color: #fff;
+                font-family: sans-serif;
+            }
+            nav a:hover{
+                background-color: #2e78c5;
+            }
+            nav li li{
+                float: none;
+                display: none;
+            }
+            nav ul{
+                position: absolute;
+                
+            }
+            nav{
+                padding-top: 82px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="cabecera">
+            <div id="cabecera2">
+                <img id="logo" src="logo.png" alt="logo">
+                
+                <nav id="barraDeNavegacion">
+                    <ul>
+                        <li><a href="http://www.google.com">Inicio</a></li>
+                        <li><a href="http://www.google.com">Productos</a>
+                            <ul>
+                                <li><a href="http://www.google.com">Libros</a></li>
+                                <li><a href="http://www.google.com">Revistas</a></li>
+                                <li><a href="http://www.google.com">Otros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://www.google.com">Soporte técnico</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            </div>
+        </div>
+        <div id="contenido">
+            
+        </div>
+    </body>
+</html>
